@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/log_re_layout"
+    xmlns:cw="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_back6"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@mipmap/head_back4"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <ui.CircleImageView
+
+                    android:id="@+id/login_touxiang"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:src="@mipmap/default_touxiang"
+
+                    cw:border_color="@color/colorgray"
+                    cw:border_width="1dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/shadow"
+                    android:layout_alignParentTop="true"
+                    />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/log_l1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rectangle_shape"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/account" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=":"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/et_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="Please input your account"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/log_l1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectangle_shape2"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/pass_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=":"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/et_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="Please input your password"
+                    android:password="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/basebutton_back_selector"
+                android:text="登陆"
+                android:textColor="@color/colorwhite" />
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_alignTop="@+id/login_button"
+                android:background="@drawable/basebutton_back_selector"
+                android:text="注册"
+                android:textColor="@color/colorwhite"
+
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--<ProgressDialog
+
+
+        />
+    <ProgressBar
+        android:id="@+id/log_proBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:progressTint="@color/colorblue"
+
+        />-->
+
+</RelativeLayout>

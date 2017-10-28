@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PolygonsView">
+        <!--字体颜色-->
+        <attr name="textColor" format="color"/>
+        <!-- 能力线条颜色-->
+        <attr name="dataPolygonsColor" format="color"/>
+        <!--多边形背景颜色-->
+        <attr name="polygonsColor" format="color"/>
+        <!--多边形边数-->
+        <attr name="polygonsEdgeCount" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="LineChartView">
+        <attr name="xColor" format="color"/>
+        <attr name="yColor" format="color"/>
+
+        <attr name="yDateTextColor" format="color"/>
+        <attr name="xDateTextColor" format="color"/>
+
+        <attr name="circleColor" format="color"/>
+        <attr name="littleCircleColor" format="color"/>
+        <attr name="lineChartColor" format="color"/>
+        <attr name="dataMessageColor" format="color"/>
+        <attr name="downCircleColor" format="color"/>
+    </declare-styleable>
+</resources>

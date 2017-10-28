@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ui.SildingFinishLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sfl"
+    >
+    <ScrollView
+        android:id="@+id/myproblem_meg_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:background="@color/colorblue">
+
+                <Button
+                    android:id="@+id/myproblem_meg_back_bt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/back_button_selector"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:id="@+id/myproblem_meg_more_bt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/more_icon_selector"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/myproblem_meg_titlename"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/myproblem_meg_back_bt"
+                    android:layout_toStartOf="@+id/myproblem_meg_more_bt"
+                    android:gravity="bottom"
+                    android:paddingBottom="5dp"
+                    android:text="titlename"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorwhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="题号:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/myproblem_meg_pid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="1001"
+                    android:textColor="@color/colorDarkBlue" />
+
+                <TextView
+                    android:id="@+id/myproblem_meg_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="素数判定"
+                    android:textColor="@color/colorblue"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorbluegray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorwhite"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_toStartOf="@+id/myproblem_meg_l1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/text_back_shape3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="int64:"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/myproblem_meg_int64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingRight="4dp"
+                        android:text="%lld"
+                        android:textColor="@color/colorblack" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/myproblem_meg_l1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/text_back_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="时限:"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/myproblem_meg_timelimit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingRight="4dp"
+                        android:text="2000/1000 MS (Java/Others)"
+                        android:textColor="@color/colorblack" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorwhite"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/text_back_shape2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="空间限制:"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/myproblem_meg_memorylimit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingRight="4dp"
+                        android:text="65536/32768 K (Java/Others)"
+                        android:textColor="@color/colorblack" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorwhite">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="来源:"
+                        android:textColor="@color/colorgreen"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/myproblem_meg_oj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="本oj"
+                        android:textColor="@color/colorDarkBlue"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="OJ题号:"
+                        android:textColor="@color/colorgreen"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/myproblem_ojid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="1001"
+                        android:textColor="@color/colorDarkBlue"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/shadow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorwhite"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="题目描述:" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorgray" />
+
+                <WebView
+                    android:id="@+id/myproblem_meg_dec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="INPUT:" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorgray" />
+
+                <WebView
+                    android:id="@+id/myproblem_meg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="OUTPUT:" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorgray" />
+
+                <WebView
+                    android:id="@+id/myproblem_meg_output"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/shadow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorwhite"
+                >
+
+                <LinearLayout
+                    android:id="@+id/myproblem_meg_sampleinput_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="输入样例:" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/colorgray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/myproblem_meg_sampleoutput_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="输出样例:" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/colorgray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/shadow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorwhite"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="代码提交"
+                        android:layout_toStartOf="@+id/myproblem_meg_lang_spinner" />
+                    <Spinner
+                        android:id="@+id/myproblem_meg_lang_spinner"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@null"
+                        android:layout_alignParentEnd="true"></Spinner>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorgray"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/myproblem_meg_code_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:hint="Your fingers have the power to change the world"
+                    android:textSize="14sp"
+                    android:gravity="top"
+                    android:layout_margin="5dp"
+                    android:background="@mipmap/edittext_back"
+                    />
+                <Button
+                    android:id="@+id/myproblem_meg_submit_bt"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="提交"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorDarkBlue"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</ui.SildingFinishLayout>

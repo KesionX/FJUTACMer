@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorblue"
+        >
+        <Button
+            android:id="@+id/paiming_menu_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/menu_selector"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="OJ排名"
+            android:textSize="20sp"
+            android:textColor="@color/colorwhite"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/refresh_and_listview"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_alignParentBottom="true"
+
+            >
+            <TextView
+            android:id="@+id/tttt"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadow_top"
+            android:layout_alignParentTop="true"
+            />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorwhite"
+                android:layout_below="@+id/tttt"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/relativeLayout"
+
+                    >
+                    <ui.ColorTextView
+                        android:id="@+id/ranking_rank"
+                        android:layout_width="20dp"
+                        android:layout_height="80dp"
+                        android:text="100"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="80dp"
+                        android:padding="3dp"
+                        >
+                        <ui.CircleImageView
+                            android:id="@+id/ranking_tx"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@mipmap/default_touxiang"
+                            android:layout_centerHorizontal="true"
+
+                            />
+
+                        <ui.ColorTextView
+                            android:id="@+id/ranking_nick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="nick"
+                            android:textSize="9sp"
+                            android:layout_below="@+id/ranking_tx"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3dp"
+
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_toEndOf="@+id/relativeLayout"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    >
+                    <TextView
+                        android:id="@+id/ranking_motto"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="motto:"
+                        android:gravity="center"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:weightSum="4"
+                        >
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AC数:"
+                                android:textSize="10sp"
+                                android:textColor="@color/colorblack"
+                                android:id="@+id/textView8" />
+                            <TextView
+                                android:id="@+id/ranking_acnum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200"
+                                android:textSize="10sp"
+                                android:layout_alignBottom="@+id/textView8"
+                                android:layout_toEndOf="@+id/textView8"
+                                android:textColor="@color/colorgreen"
+                                />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ACB数:"
+                                android:textSize="10sp"
+                                android:textColor="@color/colorblack"
+                                android:id="@+id/textView9" />
+                            <TextView
+                                android:id="@+id/ranking_acb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200"
+                                android:textSize="10sp"
+                                android:layout_alignBottom="@+id/textView9"
+                                android:layout_toEndOf="@+id/textView9"
+                                android:textColor="@color/coloryellow"
+                                />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="积分:"
+                                android:textSize="10sp"
+                                android:textColor="@color/colorblack"
+                                android:id="@+id/textView10" />
+                            <ui.ColorTextView
+                                android:id="@+id/ranking_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200"
+                                android:textSize="10sp"
+                                android:layout_alignBottom="@+id/textView10"
+                                android:layout_toEndOf="@+id/textView10" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="参赛数:"
+                                android:textSize="10sp"
+                                android:textColor="@color/colorblack"
+                                android:id="@+id/textView11" />
+                            <TextView
+                                android:id="@+id/ranking_ratingnum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200"
+                                android:textSize="10sp"
+                                android:layout_alignBottom="@+id/textView11"
+                                android:layout_toEndOf="@+id/textView11"
+                                android:textColor="@color/colorblue"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

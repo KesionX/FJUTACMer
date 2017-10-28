@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    android:layout_height="41dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/gre_up_jiaobiao"
+        android:id="@+id/root_jiaobiao" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="title"
+        android:textColor="@color/colorblack"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_toStartOf="@+id/userScore"
+        android:layout_toEndOf="@+id/root_jiaobiao" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="5"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textView7"
+        android:id="@+id/userScore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="/"
+        android:gravity="center"
+        android:padding="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/Score"
+        android:id="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="11"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/Score" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/colorgray"
+        />
+
+
+</LinearLayout>

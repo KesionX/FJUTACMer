@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="www.fjutoj.com.fjutacmer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".JushAppliction"
+        android:allowBackup="true"
+        android:icon="@mipmap/acmer_log3"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SplashActivity" />
+        <activity
+            android:name=".RegActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity android:name=".TabHostActivity" />
+        <activity
+            android:name=".MegSelfActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name=".MyProblemActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity android:name=".SplashBeginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".SystemMessageReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <category android:name="www.fjutoj.com.fjutacmer" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MyMessageActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name=".UpLoadAppActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity android:name=".BlockDecActivity"
+            android:theme="@style/AppTheme.TransparentActivity"
+            ></activity>
+
+        <service android:name="service.MyService">
+
+
+        </service>
+    </application>
+
+</manifest>

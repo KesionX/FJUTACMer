@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorblue"
+        >
+        <Button
+            android:id="@+id/menu_show"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/menu_selector"
+            android:layout_centerVertical="true"
+
+            />
+        <LinearLayout
+            android:layout_width="142dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rectangle_shape5"
+            android:padding="1dp"
+            >
+            <TextView
+                android:id="@+id/problem_pb_title"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="题目"
+                android:textColor="@color/colorwhite"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/rectangle_shape3_blue"
+                />
+            <TextView
+                android:id="@+id/problem_status_title"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="状态"
+                android:textColor="@color/colorblue"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/rectangle_shape4"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/shadow"
+            />
+        <ui.TabViewPager
+            android:id="@+id/tab_pro_and_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ui.TabViewPager>
+    </RelativeLayout>
+</LinearLayout>

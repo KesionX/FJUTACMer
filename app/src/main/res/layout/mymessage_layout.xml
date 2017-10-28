@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mymessage"
+    android:background="#f5f5f5"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorblue"
+
+        >
+        <Button
+            android:id="@+id/back_bt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_button_selector"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="我的消息:"
+            android:textColor="@color/colorwhite"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+           android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/system_message_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@color/colorwhite"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="系统通知:"
+        android:textColor="@color/colorgreen"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/system_message_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xiao xi "
+        android:textColor="@color/colorblack"
+        />
+
+    <TextView
+        android:id="@+id/system_message_datetime"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2016 10 - 10"
+        android:gravity="end"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorgray"
+        />
+</LinearLayout>

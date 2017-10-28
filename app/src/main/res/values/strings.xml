@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">工院ACMer</string>
+
+    <string-array name="language_list">
+        <item>c++</item>
+        <item>c</item>
+        <item>java</item>
+    </string-array>
+</resources>
